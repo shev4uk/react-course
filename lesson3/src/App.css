@@ -1,0 +1,10 @@
+.item-list {
+  border: 1px solid;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  background-color: coral;
+  cursor: pointer;
+}
+.item-list.item-done {
+  background-color: darkgreen;
+}
