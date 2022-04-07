@@ -4,8 +4,9 @@ import Input from './components/Input'
 import Random from './components/Random'
 
 function App() {
-  const counts = useSelector(state => state.counts);
-  const items = useSelector(state => state.items);
+  const { counts } = useSelector(state => state.counts);
+  const { items } = useSelector(state => state.items);
+  console.log(counts, items);
   return (
     <div>
       {counts}
