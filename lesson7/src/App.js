@@ -5,10 +5,12 @@ import NotFound from './modules/common/components/NotFound';
 import Navigation from './modules/common/components/Navigation';
 import TodosModule from './modules/todos/TodosModule';
 import './App.css';
+import LanguageProvider from './modules/common/providers/languageContext';
+
 
 function App() {
   return (
-    <div>
+    <LanguageProvider>
       <Router>
         <Navigation />
         <Routes>
@@ -18,7 +20,7 @@ function App() {
           <Route path='*' element={<NotFound />} />
         </Routes>
       </Router>
-    </div>
+    </LanguageProvider>
   );
 }
 
