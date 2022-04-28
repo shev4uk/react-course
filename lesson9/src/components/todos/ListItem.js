@@ -1,6 +1,7 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
 
-export default function ListItem({item, onChangeStatus, onDelete}) {
+function ListItem({item, onChangeStatus, onDelete}) {
   function onClickItem() {
     onChangeStatus(item)
   }
@@ -15,3 +16,9 @@ export default function ListItem({item, onChangeStatus, onDelete}) {
     </li>
   )
 }
+
+ListItem.propTypes = {
+  item: PropTypes.any.isRequired
+}
+
+export default ListItem

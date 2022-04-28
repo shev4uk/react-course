@@ -1,0 +1,10 @@
+.item {
+    padding: 5px;
+    border: 1px solid;
+    display: flex;
+    justify-content: space-between;
+    background-color: crimson;
+}
+.item.done {
+    background-color: green;
+}
