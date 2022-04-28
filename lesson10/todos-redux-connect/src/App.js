@@ -11,7 +11,7 @@ function App() {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchTodos())
-  }, [])
+  }, [dispatch])
   return (
     <div>
       <ErrorBoundary FallbackComponent={ErrorFallback}>

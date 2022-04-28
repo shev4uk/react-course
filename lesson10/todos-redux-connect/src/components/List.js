@@ -1,4 +1,4 @@
-import { connect, useDispatch, useSelector } from "react-redux";
+import { connect } from "react-redux";
 import { deleteTodo, updateTodo } from "../store/actions/todo";
 import ListItem from './ListItem';
 
